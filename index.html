@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Your Name — Game Developer</title>
+<meta name="description" content="Portfolio of Your Name, indie game developer at Inkolor — games, CV and contact." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="shell">
+    <a href="index.html" class="brand">Your Name<span class="dot">.</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="primary-nav">
+      <ul>
+        <li><a href="index.html" class="is-active">Home</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <canvas class="grid-field" aria-hidden="true"></canvas>
+    <div class="shell">
+      <p class="eyebrow">Indie game developer &mdash; Inkolor</p>
+      <h1>I build small worlds<br>players return to.</h1>
+      <p class="lede">I design and ship tower-defense and idler games under the Inkolor label &mdash; from core Unity architecture to the balance sheet.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="projects.html">See the games</a>
+        <a class="btn" href="cv.html">View CV</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell">
+      <p class="eyebrow">What I do</p>
+      <h2>Systems first, then the fun follows.</h2>
+      <p class="lede" style="max-width: 60ch;">
+        Most of my work happens under the hood: tick management, save systems,
+        wave balancing, UI that survives a locale change. The games are built
+        to hold up under an idle player's patience and a completionist's scrutiny alike.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell">
+      <p class="eyebrow">Currently</p>
+      <h2>Building Paper Tower</h2>
+      <p class="lede" style="max-width: 60ch;">
+        A transparent desktop-overlay tower defense with a Pomodoro twist &mdash;
+        currently in development, with its Steam page live.
+      </p>
+      <a class="btn" href="projects.html" style="margin-top: 20px;">Read about it</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="shell">
+    <span>&copy; 2026 Your Name / Inkolor</span>
+    <span>Built with plain HTML, hosted on GitHub Pages</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
