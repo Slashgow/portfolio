@@ -345,7 +345,7 @@ footer.site-foot {
   border-radius: var(--radius-sm);
   aspect-ratio: 4 / 3;
   object-fit: cover;
-  background: var(--surface);
+  /*background: var(--surface);*/
 }
 
 .project-links {
