@@ -1,0 +1,46 @@
+<a class="project-card" href="{{ include.href }}">
+  <div class="thumb">
+    <img src="{{ include.thumb }}" alt="{{ include.alt }}">
+  </div>
+
+  <div class="meta-strip">
+    <span class="meta-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+        <circle cx="9" cy="8" r="3"/>
+        <path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/>
+        <circle cx="17" cy="9" r="2.4"/>
+        <path d="M15.5 20c.3-2.6 2-4.6 4.5-5"/>
+      </svg>
+      {{ include.team }}
+    </span>
+
+    <span class="meta-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+        <circle cx="12" cy="12" r="9"/>
+        <path d="M12 7v5l3.5 2"/>
+      </svg>
+      {{ include.status }}
+    </span>
+
+    <span class="meta-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+        <path d="M14.7 6.3a3 3 0 0 0-4.2 4.2L4 17l3 3 6.5-6.5a3 3 0 0 0 4.2-4.2l-2 2-1.9-.6-.6-1.9 2-2Z"/>
+      </svg>
+      {{ include.engine }}
+    </span>
+  </div>
+
+  <div class="card-body">
+    <div class="card-title-row">
+      <h3>{{ include.title }}</h3>
+      <span class="chev">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="m9 6 6 6-6 6"/>
+        </svg>
+      </span>
+    </div>
+
+    <p class="role">{{ include.role }}</p>
+    <p class="desc">{{ include.desc }}</p>
+  </div>
+</a>

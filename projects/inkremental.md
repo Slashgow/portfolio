@@ -2,9 +2,8 @@
 layout: default
 title: Inkremental
 ---
-
+<div class="shell">
 {% include back-link.html href="/" label="Go Back" %}
-
 {% include project-hero.html
     image="../images/inkremental-hero.jpg"
     alt="Inkremental gameplay screenshot"
@@ -36,3 +35,4 @@ title: Inkremental
     { 'href': 'https://x.com/inkolorgames', 'label': 'Dev updates on X' }
   ]
 " %}
+</div>

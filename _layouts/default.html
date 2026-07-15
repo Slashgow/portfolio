@@ -4,14 +4,11 @@
   {% include head.html %}
 </head>
 <body>
-
+<div id="page-wrapper">
   {% include header.html %}
-
-  <main>
-    {{ content }}
-  </main>
-
+  <main>{{ content }}</main>
   {% include footer.html %}
-
+</div>
+{% include transition-script.html %}
 </body>
 </html>

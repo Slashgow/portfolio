@@ -1,0 +1,21 @@
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const wrapper = document.getElementById("page-wrapper");
+  wrapper.classList.add("page-enter");
+
+  // Project card click → slide left
+  document.querySelectorAll(".project-card").forEach(card => {
+    card.addEventListener("click", (e) => {
+      wrapper.classList.add("page-exit-left");
+    });
+  });
+
+  // Back link click → slide right
+  const back = document.querySelector(".back-link");
+  if (back) {
+    back.addEventListener("click", () => {
+      wrapper.classList.add("page-exit-right");
+    });
+  }
+});
+</script>

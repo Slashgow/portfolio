@@ -20,3 +20,4 @@ title: Irezumi Defenders
 <div class="detail-body">
   <!-- same content -->
 </div>
+  

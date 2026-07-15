@@ -1,14 +1,14 @@
 :root {
-  --bg: #000000;
-  --surface: #2f4550;
-  --surface-2: #586f7c;
+  --bg: #0D0D0D;
+  --surface: #595959;
+  --surface-2: #262626;
   --line: #2b2b30;
 
-  --teal: #7fe9d4;
-  --coral: #f2a49a;
-  --coral-dim: rgba(242, 164, 154, 0.35);
+  --teal: #595959;
+  --coral: #D9D9D9;
+  --coral-dim: #9BC4C6;
 
-  --text: #ececeb;
+  --text: #D9D9D9;
   --text-soft: #a3a3a8;
   --text-faint: #6f6f75;
 
@@ -32,6 +32,30 @@ body {
   font-size: 17px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+}
+
+#page-wrapper {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* When page is ready */
+#page-wrapper.page-enter {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Slide out to left */
+.page-exit-left {
+  opacity: 0;
+  transform: translateX(-400px);
+}
+
+/* Slide out to right */
+.page-exit-right {
+  opacity: 0;
+  transform: translateX(400px);
 }
 
 img { max-width: 100%; display: block; }
@@ -101,10 +125,11 @@ h1, h2, h3 {
   width: 44px;
   height: 44px;
 }
-.icon-btn svg { width: 20px; height: 20px; }
+.icon-btn svg { width: 20px; height: 20px;}
+.icon-btn img { width: 30px; height: 30px; filter: invert(1); }
 .icon-btn:hover, .resume-btn:hover {
   text-decoration: none;
-  background: rgba(242, 164, 154, 0.1);
+  background: rgba(217, 217, 217, 0.1);
   border-color: var(--coral);
 }
 
@@ -122,10 +147,11 @@ h1, h2, h3 {
    ============================================================ */
 .intro { padding: 56px 0 72px; }
 .intro .shell {
-  display: flex;
+  display: flex !important;
+  flex-direction: row !important;
   align-items: center;
   gap: 48px;
-  flex-wrap: wrap;
+  flex-wrap: no-wrap;
 }
 
 .avatar {
