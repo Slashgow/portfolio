@@ -129,7 +129,7 @@ h1, h2, h3 {
 .icon-btn img { width: 30px; height: 30px; filter: invert(1); }
 .icon-btn:hover, .resume-btn:hover {
   text-decoration: none;
-  background: rgba(217, 217, 217, 0.1);
+  background: rgba(217, 217, 217, 0.3);
   border-color: var(--coral);
 }
 
